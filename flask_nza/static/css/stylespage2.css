@@ -1,0 +1,255 @@
+/* Displaying the Grid */
+.grid-wrapper_jm{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+  grid-template-rows: .25fr .2fr 9fr .45fr;
+  grid-template-columns: .40fr .40fr 1fr .40fr;
+  grid-template-areas:
+
+/* 1fr = 20-30px depending on the size of ur screen */
+
+/* Whenever you create grids and columns u have to have the same
+amount of items to match the grids and rows, see above and below */
+      "woodleft_jm  header_jm   header_jm     woodright_jm"
+      "woodleft_jm  nav_jm      nav_jm        woodright_jm"
+      "woodleft_jm  content1_jm content2_jm  woodright_jm"
+      "woodleft_jm  footer_jm   footer_jm     woodright_jm";
+}
+/* logo with Lawfirm caption */
+#placeholder_jm{
+    grid-area: header_jm;
+    padding-left: 200px;
+    background-color: rgb(243, 243, 243);
+    font-style: normal;
+    line-height: 2px; }
+    
+.placeholder-container{
+    grid-area: header_jm;
+    position: relative;
+    right: -105px;
+    top: 5px;
+}
+
+.wwd h3,h4{ color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+.placeholder-container img{
+    border: double;
+}
+
+
+/* nav bar */
+
+.nav_content{
+    grid-area:nav_jm;
+    background-color: rgb(248, 248, 248);
+    border-top:  black;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-width: 2px;
+    text-align: center;
+    
+   
+}
+/* nav content */
+.nav_content li{
+    display: inline;
+/* this code places space between the nav bar items below */
+    padding-left: 30px;
+    padding-right: 70px;
+    border-right: 1px solid;  
+    font-style: none;
+    text-decoration: none;
+    color: black;
+}
+.nav_content li{
+   font-style: none;
+}
+
+.navbar_jm{
+    grid-area: navbar_jm;
+    /*background-color: lightblue*/
+}
+
+.officechair{
+    position: relative;
+    top: 16px;
+}
+
+/* Content 1 What WE DO SECTION */
+.wwd{
+    grid-area:content1_jm;
+    background-color:#800000 ;
+    border-style: solid;
+    border-color: white;
+    border-top-width: 25px;
+    border-left-width: 30px;
+    border-bottom-width: 5px;
+    padding-left: 30px;
+    padding-bottom: 0px;
+    margin-bottom: 60px;
+
+
+    /* This code below removes the numbers in the ordered list  */
+}
+
+/* This code below removes the numbers in the ordered list  */
+.subrogation li{
+    list-style-type: none ;
+}
+
+
+/* Content2 - Paragraph */
+.container-paragraph{
+    grid-area: content2_jm;
+    background-color: none;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 40px;
+    font-style: Arial;
+    line-height: 24px;
+    font-size: 85%;
+
+
+}
+ /*Content 2- Pictures  */
+/* #fire img{
+    width: 275px;
+    height: 190px;
+} */
+
+/* Code below this line allowed me to resize the border
+but you have to put a width and height demension in the img src */
+
+/* Line 99 allows you to select multiple classes and move the contents 
+which were in this case images */
+#hand{
+    position: relative;
+    top: -20px;
+    right:3px;
+}
+#fire{
+    position: relative;
+    top: -20px;
+    right: 1px;
+}
+
+
+#paper{ 
+    position: relative;
+    top: -275px;
+    left: -1px;
+    
+}
+
+#semi{position: relative;
+    top: -275px;
+    left: -3px;
+
+}
+
+ .container {
+    grid-area: content2_jm;
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  .container .image {
+    width: 35%;
+  }
+  
+  .container img {  
+    width: calc(100% - (5px * 2));
+    margin-top: 175px;
+    margin-left: 75px;
+    border-style: double;
+    border-width: 3px;
+    
+    
+       
+/* Code that places border around the images */
+    /* border-style: dashed;   */ 
+
+  }
+
+.wood_left{
+    width: 100vw;
+    height: 100vh;
+}
+.wood_right{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* left column */
+.woodleft_jm{
+    grid-area:woodleft_jm;
+
+    /* carlos code below for background */
+    background-color: white;
+    display: block;
+    background-size: contain;
+    overflow: hidden;
+   
+
+
+    
+     
+
+    
+    /* background-color:#800000; maroon color for backgrounf  */
+  
+}                                    
+                       /* Change color to #800000 for main color */
+/* right column */
+.woodright_jm{
+    grid-area:woodright_jm;
+    background-color:#800000;
+
+    background-color: white;
+    display: block;
+    background-size: contain;
+    overflow: hidden;
+}
+
+
+
+
+
+.footer{
+    grid-area:footer_jm;
+    background-color: none
+;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-width: 2px;
+
+    }
+    
+#bottomElem>div>a>p{
+    display: inline;
+        padding: 10px 0  5px 0; /* top right bottom left */
+        font-size: 80%;
+        margin-right: 3px;
+        color: black;
+}
+    
+.footer{ text-align: center;
+    padding-top: 15px;
+    line-height: 60%;
+    
+
+    
+}
+    

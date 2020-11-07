@@ -1,0 +1,239 @@
+.grid-wrapper_hp {
+    /*display a grid using this class*/
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    /* grid-template-rows == gridRow
+       grid-template-columns == gridColumns
+    */
+    grid-template-rows: 1fr .4fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-areas:
+        "leftbar_hp   headers_hp        headers_hp        rightbar_hp"
+        "leftbar_hp   navbar_hp         navbar_hp         rightbar_hp"
+        "leftbar_hp   leftbox_hp        textboxone_hp     rightbar_hp"
+        "leftbar_hp   leftbox_hp        picboxone_hp      rightbar_hp"
+        "leftbar_hp   leftbox_hp        picboxthree_hp    rightbar_hp"
+        "leftbar_hp   leftbox_hp        picboxfive_hp     rightbar_hp"
+        "leftbar_hp   bottombar_hp      bottombar_hp      rightbar_hp"
+        "leftbar_hp   bottomborder_hp   bottomborder_hp   rightbar_hp";
+}
+
+/* ul {
+list-style: none;
+} */
+
+.ul li{
+  list-style-type: none;
+}
+
+.leftbox_hp li{
+  list-style: none;
+ 
+}
+
+
+h4{
+  position: relative;
+    left: 20px;
+}
+
+
+h6{
+  position: relative;
+  left: 20px;
+}
+
+h5{
+  position: relative;
+  left: 20px;
+}
+
+  .mapimage{
+    margin-left: 5px;
+    margin-right: 5px;
+    
+   
+}
+
+.nav_content_hp{
+  grid-area: navbar_hp;
+  background-color: rgb(248, 248, 248);
+  border-top:  black;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  border-width: 2px;
+  text-align: center;
+  margin: 20px;
+  
+}
+
+/* nav content */
+.nav_content_hp li{
+  display: inline;
+/* this code places space between the nav bar items below */
+  padding-left: 10px;
+  padding-right: 30px;
+  border-right: 1px solid;  
+  font-style: none;
+  text-decoration: none;
+  color: black;
+
+}
+ .nav_content_hp li{
+   font-style: none;
+ }
+
+
+.container_hp{
+  grid-area:picboxone;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.contantainer .image_hp {
+  width: 35%
+}
+
+.container img {
+  width: calc(100% -(20px * 2));
+  margin-top: 175;
+  margin-left: 75px;
+}
+
+
+
+.headers_hp {
+    grid-area: headers_hp;
+    /*background-color: grey;*/
+
+  }  
+
+  .navbar_hp {
+    grid-area: navbar_hp;
+    /*background-color: lightblue*/
+  }
+
+  .leftbox_hp {
+    grid-area: leftbox_hp;
+    background-color: #850000;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+    height: 580px;
+  }
+  
+  
+
+  
+
+.container_hp img{
+  border-style: double;
+}
+
+  .textboxone_hp {
+    grid-area: textboxone_hp;
+    /*background-color: green;*/
+  }
+
+  .picboxone_hp {
+    grid-area: picboxone_hp;
+    /*background-color: rgb(14, 22, 90);*/
+    
+  }
+  .picboxtwo_hp {
+    grid-area: picboxtwo_hp;
+    /*background-color: rgb(71, 157, 179);*/
+  }
+  .picboxthree_hp {
+    grid-area: picboxthree_hp;
+    /*background-color: rgb(52, 76, 107);*/
+  }
+  .picboxfour_hp {
+    grid-area: picboxfour_hp;
+    /*background-color: rgb(118, 63, 134);*/
+  }
+  .picboxfive_hp {
+    grid-area: picboxfive_hp;
+    /*background-color: rgb(94, 134, 125);*/
+  }
+  .picboxsix_hp {
+    grid-area: picboxsix_hp;
+    /*background-color: rgb(61, 221, 55);*/
+  }
+
+
+
+  .textboxtwo_hp {
+    grid-area: textboxtwo_hp;
+    /*background-color: green;*/
+
+  }
+
+  /*.leftbar_hp {
+    grid-area: leftbar_hp;
+    background-color: #92342F
+
+  }
+*/
+  /*.rightbar_hp {
+    grid-area: rightbar_hp;
+    background-color: #92342F;
+
+  }
+  */
+
+  .bottombar_hp {
+    grid-area:bottombar_hp;
+    background-color: white;
+    text-align: center;
+    display: block;
+    /*margin-top: 20px;*/
+    padding: 20px;
+  }
+/* 
+  .bottomborder_hp {
+    grid-area:bottomborder_hp;
+    display: block;
+    background-color: grey;
+
+  } */
+  
+  #bottomElem>div>a>p{
+    display: inline;
+    text-align: center;
+    padding: 10px 0  5px 0; /* top right bottom left */
+    font-size: 80%;
+    margin-right: 3px;
+    /*color: black;*/
+}
+
+
+
+.leftbar_hp {
+  grid-area: leftbar_hp;
+  background-color: white;
+  display: block;
+  background-size: contain;
+  overflow: hidden;
+}
+.leftbar {
+  width: 100vw; /* 100% view width of the grid portion/section it covers */
+  height: 100vh; /* 100% view height of the grid portion/section it covers */
+  background-size: cover; /* RESPONSIVE IMAGE: '100% 100%' versus 'covers' */
+}
+.rightbar_hp {
+  grid-area: rightbar_hp;
+  background-color: white;
+  display: block;
+  overflow: hidden;
+}
+.rightbar {
+  width: 100vw; /* 100% view width of the grid portion/section it covers */
+  height: 100vh; /* 100% view height of the grid portion/section it covers */
+  background-size: cover; /* RESPONSIVE IMAGE: '100% 100%' versus 'covers' */
+}
+  

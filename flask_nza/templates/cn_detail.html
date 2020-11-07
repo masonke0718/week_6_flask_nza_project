@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <!-- the home route will handle this too -->
+    <a href="{{ url_for('home') }}">
+        <button class="btn btn-primary">Back to Home</button>
+    </a>
+    
+    <div class="container">
+        <!-- checking to see who is the authorized user and then shows the username: -->
+        <h1>This case note belongs to: {{ cn.author.username }}</h1>
+        <hr>
+        <h3>Case Note Info: </h3>
+        <hr>
+        <h3>Title: {{ cn.title }}</h3>
+        <p>Content: {{ cn.content }}</p>
+
+        <blockquote>Date Created: {{ cn.date_created }}></blockquote>
+
+        <a href="{{ url_for('cn_update', cn_id = cn.id) }}">
+            <button class="btn btn-primary">Update Case Note</button>
+        </a>
+        <!-- TODO  add Delete Button URL -->
+        <a href="{{ url_for('cn_delete', cn_id = cn.id) }}">
+            <button class="btn btn-danger">Delete Case Note</button>
+        </a>
+
+    </div>
+
+{% endblock content %}

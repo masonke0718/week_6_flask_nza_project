@@ -1,0 +1,167 @@
+{% extends 'baseindexpage2.html' %}
+
+{% block content %}
+
+<!-- Grid Staring Point -->
+<div class="grid-wrapper_jm">
+    <div class="woodleft_jm"></div>
+    <div class="woodright_jm"></div>
+    <div class="woodright_jm"></div>
+
+
+<!-- LAWFIRM NAME AND Placeholder -->
+<div class="header_jm" id="placeholder_jm">
+    <h1><p>NIELSEN, ZEHE</p><p>& ANTAS, P.C. </p></h1>
+</div>
+
+
+<!-- NAV BAR AREA -->
+<nav class="nav_content_hp"> 
+    <ul style="color: black;">
+    <li><a href="{{ url_for('home') }}">Home</a></li>
+    <li><a href="{{ url_for('indexpage1') }}">WHO WE ARE </a></li>
+    <li><a href="{{ url_for('indexpage2') }}">WHAT WE DO </a></li>
+    <li><a href="{{ url_for('indexpage3') }}">NEWS & EVENTS </a></li>
+    <li><a href="{{ url_for('register') }}">REGISTER </a></li>
+    <li><a href="{{ url_for('login') }}">LOGIN </a></li> 
+    <li><a href="{{ url_for('logout') }}">LOGOUT </a></li>
+    <li><a href="{{ url_for('cns') }}">Add Case Notes </a></li>    
+    </ul>   
+</nav>
+
+  <!-- WHAT WE DO SECTION -->
+<div class="wwd">
+    <h3>WHAT WE DO</h3> 
+<hr color="white" style="width: 100%;">
+  
+<div class="subrogation" style="color:white;" id="listitems1">
+    <h4 style="line-height: 0px;">Subrogation</h4> 
+    <ol>
+        <li>Property</li>
+        <li>Workers Compensation</li>
+    </ol>
+    <h4 style="line-height: 0px;">Litigation</h4> 
+    <ol>
+        <li>Apellate</li>
+        <li>Commercial</li>
+        <li>Defense</li>
+        <li>Labor/Employment</li>
+    </ol> 
+    <h4 style="line-height: 0px;">Business</h4> 
+    <ol>
+        <li>Brokerage Agreement</li>
+        <li>Business Formation</li>
+        <li>Business Related Contracts</li>
+        <li>Labor/Employment</li>
+    </ol> 
+    <h4>Transportation</h4>
+<div class="officechair"><img src="../static/css/images/officechairs.jpg" width="170" height="110" alt="officechair">
+</div>
+ <h5 style="line-height: 0px;">Attorneys</h6><p>Meet our prestigious partners<br> and esteemed associations.</p>       
+    
+</div>
+
+</div>
+
+<!-- Location for the Wood background left column -->
+<div class="woodleft_jm">
+<img class="wood_left" src="../static/css/images/wood.png" width="733" height =
+"1050" alt="Wood background for the left column">
+
+</div>
+<div class="woodright_jm">
+    <img class="wood_right" src="../static/css/images/wood.png" width="733" height =
+    "1050"alt="Wood background for the left column">
+    
+</div>
+ 
+<!--  Content 2 Paragraph  -->
+<div class="container-paragraph" id="paragraph">
+<p> What we do at Nielsen Zehe & Antas PC is prevent our client's problems in some cases, solve their
+    problems in other cases, and ultimately, if the problems cannot be prevented or resolved, prepare
+    to take the problems to trial and WIN. Our attorneys, who view themselves as problems solvers, have
+    tried more cases to a jury or judge thanv most law firms collectively. Whether the problem is a lawsuit,
+    business deal, or formation of a new business, we have the skill, experience, and business acumen to
+    help our clients.</p>
+
+</div>
+
+
+
+<!-- Container 4 Pictures -->
+
+<div class="container">
+    <div class="image" id="fire">
+      <img src="../static/css/images/firefighter.jpg"  width="350" height="130" alt="Firefighter" />
+    </div>
+    <div class="image" id="hand">
+      <img src="../static/css/images/handshake.jpg" width="350" height="130" alt="handshake"/>
+    </div>
+    <div class="image" id="paper">
+      <img src="../static/css/images/paperwork.jpg" width="350" height="130" alt="paperwork"/>
+    </div>
+    <div class="image"id="semi">
+      <img src="../static/css/images/semitruck.jpg"width="350" height="130" alt="semitruck" />
+    </div>
+  </div>
+  
+<!-- Placeholder Container for placing image next ot logo -->
+<div class="placeholder-container">
+    <img src="https://via.placeholder.com/80x80" alt="Placeholder">
+</div>
+
+
+<!-- Footer Content -->
+<div class="footer">
+    <footer>
+        <div class="bottombar_hp">
+            <div class="col-md-12">
+        <div class="col-md-4 offset-md-4" id="bottomElem">
+            <div class="center-span">
+                <a href="#">
+                    <p>HOME</p>
+<!-- Commented out the dashes between the footers b/c
+they were looking ugly -->
+                    <p>-</p>
+                   
+                </a>
+                <a href="#">
+                    <p>WHO WE ARE</p>
+                    <p>-</p>
+                   
+                </a>
+                <a href="#">
+                    <p>WHAT WE DO</p>
+                    <p>-</p>
+                </a>
+​
+                <a href="#">
+                    <p>NEWS & EVENTS</p>
+                    <p>-</p>
+                </a>
+​
+                <a href="#">
+                    <p>WHERE WE WORK</p>
+                    <p>-</p>
+                </a>
+​
+                <a href="#">
+                    <p>CONTACT</p>
+                    
+                </a>
+            </div>
+             <p> &copy; 2009 Nieslen, Zehe & Antas , P.C. //Website Design by OneTen Creative</p>
+​
+        </div>
+​
+        </div>
+
+    </footer>
+
+</div>
+
+</div>
+ 
+</body>
+</html>
+{% endblock content %}

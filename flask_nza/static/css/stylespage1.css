@@ -1,0 +1,144 @@
+.grid-wrapper_cb {
+    /* Display a grid using this class */
+    display: grid; /* NOW we're offically using a grid template */
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    /* grid-templeta-rows ==gridrows sizes (can use fr=fraction or px=pixels)
+        grid-template-colums ==gridcolums sizes*/
+
+    grid-template-rows: 1fr .4fr 3.8fr 2fr;  /* 1fr = a proportion of what you set it to (its responsive)=*/ 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "woodleft_cb    header_cb      header_cb       header_cb    woodright_cb"
+        "woodleft_cb    navbar_cb      navbar_cb       navbar_cb    woodright_cb"
+        "woodleft_cb    content1_cb    content1_cb     newsfeed_cb  woodright_cb"
+        "woodleft_cb    footer1_cb     footer1_cb      footer2_cb   woodright_cb";
+       
+    }
+
+    .woodleft_cb {
+        grid-area: woodleft_cb;
+        background-color: white;
+        display: block;
+        background-size: contain;
+        overflow: hidden;
+    }
+
+    .woodleft {
+        width: 100vw; /* 100% view width of the grid portion/section it covers */
+        height: 100vh; /* 100% view height of the grid portion/section it covers */
+        background-size: cover; /* RESPONSIVE IMAGE: '100% 100%' versus 'covers' */
+    }
+
+    .woodright_cb {
+        grid-area: woodright_cb;
+        background-color: white;
+        display: block;
+        overflow: hidden;
+    }
+
+    .woodright {
+        width: 100vw; /* 100% view width of the grid portion/section it covers */
+        height: 100vh; /* 100% view height of the grid portion/section it covers */
+        background-size: cover; /* RESPONSIVE IMAGE: '100% 100%' versus 'covers' */
+    }
+
+    .header_cb {
+        grid-area: header_cb;
+        background-color: white;
+        display: block;
+        overflow: hidden;
+        margin: 10px;
+    }
+
+    .headerimage_cb {  /*need to modified so that its responsive and correct size */
+        width: 20vw; /* used inspect (right click on browser image) to adjust values and know what the exact valuse should be */
+        height: 11vh; 
+        background-size: cover;
+      
+    }
+
+    .nav_content{
+        grid-area:navbar_cb;
+        background-color: rgb(248, 248, 248);
+        border-top:  black;
+        border-style: solid;
+        border-left: none;
+        border-right: none;
+        border-width: 1px;
+        text-align: center;
+    }
+
+        /* nav content */
+    .nav_content li{
+        padding-inline-start: 1px;
+        display: inline;
+    /* this code places space between the nav bar items below */
+        padding-left: 1px;
+        padding-right: 5px;
+        border-right: 1px solid;  
+        font-style: none;
+        text-decoration: none;
+        color: black; 
+    }
+
+    .nav_content li {
+        font-style: none;
+    }
+           
+
+    /* .navbar_cb {
+        grid-area: navbar_cb;
+        background-color: gray;
+        display: block;
+        margin: 20px;
+        padding: 10px;
+    } */
+
+    .content1_cb {
+        grid-area: content1_cb;
+        background-color: white;
+        display: block;
+        overflow: hidden;
+        border-style: double;
+        border-width: 5px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .forward_thinking {
+        width: 40vw; /* used inspect (right click on browser image) to adjust values and know what the exact valuse should be */
+        height: 50vh; 
+        background-size: cover;
+
+    }
+
+    .newsfeed_cb {
+        grid-area: newsfeed_cb;
+        background-color: red;
+        display: block;
+        overflow: hidden;
+        overflow-y: scroll;
+        margin: 40px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .footer1_cb {
+        grid-area: footer1_cb;
+        background-color: white;
+        display: block;
+        margin: 20px;
+        padding: 10px;
+       
+    }
+
+    .footer2_cb {
+        grid-area: footer2_cb;
+        background-color: white;
+        display: block;
+        margin: 20px;
+        padding: 10px;
+        margin-left: 60px;
+    }
