@@ -26,10 +26,10 @@ amount of items to match the grids and rows, see above and below */
     font-style: normal;
     line-height: 2px; }
     
-.placeholder-container{
+.placeholder-container1{
     grid-area: header_jm;
     position: relative;
-    right: -105px;
+    right: -15px;
     top: 5px;
 }
 
@@ -47,7 +47,7 @@ amount of items to match the grids and rows, see above and below */
 
 /* nav bar */
 
-.nav_content{
+.nav_test{
     grid-area:nav_jm;
     background-color: rgb(248, 248, 248);
     border-top:  black;
@@ -60,11 +60,11 @@ amount of items to match the grids and rows, see above and below */
    
 }
 /* nav content */
-.nav_content li{
+.nav_test li{
     display: inline;
 /* this code places space between the nav bar items below */
-    padding-left: 30px;
-    padding-right: 70px;
+    padding-left: 10px;
+    padding-right: 20px;
     border-right: 1px solid;  
     font-style: none;
     text-decoration: none;
@@ -105,6 +105,7 @@ amount of items to match the grids and rows, see above and below */
 .subrogation li{
     list-style-type: none ;
 }
+
 
 
 /* Content2 - Paragraph */
@@ -226,10 +227,9 @@ which were in this case images */
 
 
 
-.footer{
+.bottombar_hp1{
     grid-area:footer_jm;
-    background-color: none
-;
+    background-color: none;
     border-style: solid;
     border-left: none;
     border-right: none;
@@ -239,17 +239,18 @@ which were in this case images */
     
 #bottomElem>div>a>p{
     display: inline;
-        padding: 10px 0  5px 0; /* top right bottom left */
-        font-size: 80%;
-        margin-right: 3px;
-        color: black;
+    padding: 10px 0  5px 0; /* top right bottom left */
+    font-size: 80%;
+    margin-right: 3px;
+    color: black;
 }
     
-.footer{ text-align: center;
+.bottombar_hp1{ text-align: center;
     padding-top: 15px;
-    line-height: 60%;
-    
+    line-height: 60%;      
+}
 
-    
+#header_cb {
+    padding-bottom: 20px;
 }
     

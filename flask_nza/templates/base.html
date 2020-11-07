@@ -12,9 +12,13 @@
 <title>NZA Attorney Notes</title>
 </head>
 <body>
+    <a href="{{ url_for('home') }}">
+        <img src="../static/css/images/header_cb.PNG" id="nogo">
+    </a>
     <!-- sincle '{}' repesent template statement -->
     {% include 'nav.html' %}
-    {% block content %}
+    {% include 'test.html' %}
+    {% block content %}   
     {% endblock content %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>

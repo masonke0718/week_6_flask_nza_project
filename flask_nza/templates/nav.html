@@ -12,35 +12,35 @@
         <ul class="nav nav-tabs">
             <li class="nav-item active">
                 <!-- url insert for functions in routes for 'home' and 'testRoute' -->
-                <a class="nav-link" href="{{url_for('home') }}">Home</a>
+                <a class="nav-link" href="{{ url_for('indexpage1') }}">HOME</a>
             </li>
             <li class="nav-item">
                 <!-- from bootstraps -->
-                <a class="nav-link" href="{{ url_for('indexpage1') }}">Who We Are</a>
+                <a class="nav-link" href="{{ url_for('indexpage2') }}">WHAT WE DO</a>
             </li>
             <li class="nav-item">
                 <!-- from bootstraps -->
-                <a class="nav-link" href="{{ url_for('indexpage2') }}">What We Do</a>
+                <a class="nav-link" href="{{ url_for('indexpage3') }}">WHO WE ARE</a>
             </li>
             <li class="nav-item">
                 <!-- from bootstraps -->
-                <a class="nav-link" href="{{ url_for('indexpage3') }}">News & Events</a>
+                <a class="nav-link" href="{{ url_for('register') }}">REGISTER</a>
             </li>
             <li class="nav-item">
                 <!-- from bootstraps -->
-                <a class="nav-link" href="{{ url_for('register') }}">Register</a>
+                <a class="nav-link" href="{{ url_for('login') }}">LOGIN</a>
             </li>
             <li class="nav-item">
                 <!-- from bootstraps -->
-                <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+                <a class="nav-link" href="{{ url_for('logout') }}">LOGOUT</a>
             </li>
             <li class="nav-item">
                 <!-- from bootstraps -->
-                <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+                <a class="nav-link" href="{{ url_for('cns') }}">ADD CASE NOTES</a>
             </li>
             <li class="nav-item">
                 <!-- from bootstraps -->
-                <a class="nav-link" href="{{ url_for('cns') }}">Add Case Notes</a>
+                <a class="nav-link" href="{{ url_for('home') }}">DASHBOARD</a>
             </li>
         </ul> 
     </div>

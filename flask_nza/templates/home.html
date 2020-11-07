@@ -1,23 +1,25 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <header class="banner">
-        <h1 class="header-text">Case Notes</h1>
-    </header>
-
-    <h1>Hello there {{ current_user.username }}</h1>
-    <!-- jengo is python based. so everytime we use squigly with percent, it allows us to do some python -->
-    {% if current_user.is_authenticated %}
-        {% for cn in user_cns %}
-            <div class="container">
-                <h3>
-                    <a href="{{ url_for('cn_detail', cn_id = cn.id) }}">{{ cn.title }}</a>
-                </h3>
-                <p>{{ cn.content }}</p>
-            </div>
+       
+        <h1>Welcome: {{ current_user.username }}</h1>
+        <!-- jengo is python based. so everytime we use squigly with percent, it allows us to do some python -->
+        {% if current_user.is_authenticated %}
+            {% for cn in user_cns %}
+                <div class="container">
+                    <h3>
+                        <a href="{{ url_for('cn_detail', cn_id = cn.id) }}">TITLE: {{ cn.title }}</a>
+                    </h3>
+                    </h3>
+                    <h4>CLIENT NAME: {{ cn.client }}</h4>
+                    <h3>CASE NOTES: {{ cn.content }}</h3>
+                </div>
         {% endfor %}
     {% else %}
-    <h2>Please log in or register</h2>
+    <h2>Please <a href="{{ url_for('login') }}">Login</a> or <a href="{{ url_for('register') }}">Register</a>
+    </h2>
 
     {% endif %}
 {% endblock content %}
+
+<a href="{{ url_for('login') }}">Login</a>

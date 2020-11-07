@@ -11,7 +11,10 @@
                     {{ update_form.title.label }}
                     {{ update_form.title(class="form-control", placeholder = "Update your case note title") }}
                 </fieldset>
-
+                <fieldset>
+                    {{ update_form.client.label }}
+                    {{ update_form.client(class="form-control", placeholder = "Update your Client #") }}
+                </fieldset>
                 <fieldset>
                     {{ update_form.content.lagel }}
                     {{ update_form.content(class="form-control", placeholder= "Update Case Note Content") }}

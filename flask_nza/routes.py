@@ -96,9 +96,10 @@ def cns():
     form = CnForm()
     if request.method == 'POST' and form.validate():
         title = form.title.data
+        client = form.client.data
         content = form.content.data
         user_id = current_user.id
-        cn = Cn(title,content,user_id)
+        cn = Cn(title,client,content,user_id)
         
         db.session.add(cn)
 
@@ -122,11 +123,13 @@ def cn_update(cn_id):
 
     if request.method == 'POST' and form.validate():
         title = form.title.data
+        client = form.client.data
         content = form.content.data
         user_id = current_user.id
 
         # Update the Database with the new Info
         cn.title = title
+        cn.client = client
         cn.content = content
         cn.user_id = user_id
 

@@ -51,13 +51,14 @@
         overflow: hidden;
         margin: 10px;
     }
-
-    .headerimage_cb {  /*need to modified so that its responsive and correct size */
-        width: 20vw; /* used inspect (right click on browser image) to adjust values and know what the exact valuse should be */
+/* used inspect (right click on browser image) to adjust values and know what the exact valuse should be */
+/*need to modified so that its responsive and correct size */
+    /* .headerimage_cb {                        
+        width: 20vw;                    
         height: 11vh; 
         background-size: cover;
       
-    }
+    } */
 
     .nav_content{
         grid-area:navbar_cb;
@@ -75,8 +76,8 @@
         padding-inline-start: 1px;
         display: inline;
     /* this code places space between the nav bar items below */
-        padding-left: 1px;
-        padding-right: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
         border-right: 1px solid;  
         font-style: none;
         text-decoration: none;
@@ -115,8 +116,9 @@
     }
 
     .newsfeed_cb {
+        color: rgba(255, 244, 244, 0.89);
         grid-area: newsfeed_cb;
-        background-color: red;
+        background-color:#800000;
         display: block;
         overflow: hidden;
         overflow-y: scroll;

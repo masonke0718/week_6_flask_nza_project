@@ -10,22 +10,22 @@
 
 
 <!-- LAWFIRM NAME AND Placeholder -->
-<div class="header_jm" id="placeholder_jm">
+<!-- <div class="header_jm" id="placeholder_jm">
     <h1><p>NIELSEN, ZEHE</p><p>& ANTAS, P.C. </p></h1>
-</div>
+</div> -->
 
 
-<!-- NAV BAR AREA -->
-<nav class="nav_content_hp"> 
+<!-- NAV BAR AREA trying to fix -->
+<nav class="nav_test"> 
     <ul style="color: black;">
-    <li><a href="{{ url_for('home') }}">Home</a></li>
-    <li><a href="{{ url_for('indexpage1') }}">WHO WE ARE </a></li>
+    <li><a href="{{ url_for('indexpage1') }}">HOME</a></li>
     <li><a href="{{ url_for('indexpage2') }}">WHAT WE DO </a></li>
-    <li><a href="{{ url_for('indexpage3') }}">NEWS & EVENTS </a></li>
+    <li><a href="{{ url_for('indexpage3') }}">WHO WE ARE</a></li>
     <li><a href="{{ url_for('register') }}">REGISTER </a></li>
     <li><a href="{{ url_for('login') }}">LOGIN </a></li> 
     <li><a href="{{ url_for('logout') }}">LOGOUT </a></li>
-    <li><a href="{{ url_for('cns') }}">Add Case Notes </a></li>    
+    <li><a href="{{ url_for('cns') }}">ADD CASE NOTES </a></li>
+    <li><a href="{{ url_for('home') }}">DASHBOARD</a></li>    
     </ul>   
 </nav>
 
@@ -106,57 +106,52 @@
   </div>
   
 <!-- Placeholder Container for placing image next ot logo -->
-<div class="placeholder-container">
-    <img src="https://via.placeholder.com/80x80" alt="Placeholder">
+<div class="placeholder-container1" style="padding-right: 0px; padding-left: -10px;">
+    <img src="../static/css/images/header_cb.PNG" alt="nza_pg_2" id="header_cb" style="border: none;">
 </div>
 
-
 <!-- Footer Content -->
-<div class="footer">
-    <footer>
-        <div class="bottombar_hp">
-            <div class="col-md-12">
-        <div class="col-md-4 offset-md-4" id="bottomElem">
-            <div class="center-span">
+        <div class="bottombar_hp1">
+            <!-- <div class="col-md-12"> -->
+            <div class="col-md-4 offset-md-4" id="bottomElem">
+                <div class="center-span">
                 <a href="#">
-                    <p>HOME</p>
-<!-- Commented out the dashes between the footers b/c
-they were looking ugly -->
-                    <p>-</p>
-                   
-                </a>
-                <a href="#">
-                    <p>WHO WE ARE</p>
-                    <p>-</p>
-                   
-                </a>
-                <a href="#">
-                    <p>WHAT WE DO</p>
-                    <p>-</p>
-                </a>
-​
-                <a href="#">
-                    <p>NEWS & EVENTS</p>
-                    <p>-</p>
-                </a>
-​
-                <a href="#">
-                    <p>WHERE WE WORK</p>
-                    <p>-</p>
-                </a>
-​
-                <a href="#">
-                    <p>CONTACT</p>
+            <style type="text/css"></style>
+                        <p>HOME</p>
+                        <p>-</p>
                     
-                </a>
-            </div>
-             <p> &copy; 2009 Nieslen, Zehe & Antas , P.C. //Website Design by OneTen Creative</p>
-​
-        </div>
-​
-        </div>
+                    </a>
+                    <a href="#">
+                        <p>WHO WE ARE</p>
+                        <p>-</p>
+            
+                    
+                    </a>
+                    <a href="#">
+                        <p>WHAT WE DO</p>
+                        <p>-</p>
+                    </a>
 
-    </footer>
+                    <a href="#">
+                        <p>NEWS & EVENTS</p>
+                        <p>-</p>
+                    </a>
+
+                    <a href="#">
+                        <p>WHERE WE WORK</p>
+                        <p>-</p>
+                    </a>
+
+                    <a href="#">
+                        <p>CONTACT</p>
+                        
+                    </a>
+                </div>
+                <p> &copy; 2009 Nieslen, Zehe & Antas , P.C. //Website Design by OneTen Creative</p>
+            </div>
+        </div>
+        </div>        
+
 
 </div>
 
@@ -165,3 +160,4 @@ they were looking ugly -->
 </body>
 </html>
 {% endblock content %}
+

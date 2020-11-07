@@ -21,13 +21,15 @@
     <!--<div class="navbar_hp">-->
         <nav class="nav_content_hp"> 
             <ul style="color: black;">
-            <li><a href="indexpage1.html">WHO WE ARE </a></li>
-            <li><a href="indexpage2.html">WHAT WE DO </a></li>
-            <li><a href="indexpage3.html">NEWS & EVENTS </a></li>
-            <li><a href="register.html">REGISTER </a></li>
-            <li><a href="login.html">LOGIN </a></li> 
-            <li><a href="#home">LOGOUT </a></li>   
-            </ul>   
+                <li><a href="{{ url_for('indexpage1') }}">HOME</a></li>
+                <li><a href="{{ url_for('indexpage2') }}">WHAT WE DO </a></li>
+                <li><a href="{{ url_for('indexpage3') }}">WHO WE ARE</a></li>
+                <li><a href="{{ url_for('register') }}">REGISTER </a></li>
+                <li><a href="{{ url_for('login') }}">LOGIN </a></li> 
+                <li><a href="{{ url_for('logout') }}">LOGOUT </a></li>
+                <li><a href="{{ url_for('cns') }}">ADD CASE NOTES </a></li>
+                <li><a href="{{ url_for('home') }}">DASHBOARD</a></li>    
+                </ul>   
         </nav>
             
         <!--</div>-->

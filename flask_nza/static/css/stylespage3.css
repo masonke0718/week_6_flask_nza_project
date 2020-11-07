@@ -71,10 +71,11 @@ h5{
 
 /* nav content */
 .nav_content_hp li{
+
   display: inline;
 /* this code places space between the nav bar items below */
   padding-left: 10px;
-  padding-right: 30px;
+  padding-right: 10px;
   border-right: 1px solid;  
   font-style: none;
   text-decoration: none;

@@ -23,6 +23,7 @@ class LoginForm(FlaskForm):
     submit = SubmitField()
 
 class CnForm(FlaskForm):
-    title = StringField('Title', validators = [DataRequired()])
+    title = StringField('Title / Case #', validators = [DataRequired()])
+    client = StringField('Client Name', validators = [DataRequired()])
     content = TextAreaField('Content', validators = [DataRequired()])
     submit = SubmitField()

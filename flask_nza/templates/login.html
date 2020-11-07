@@ -3,21 +3,29 @@
 {% block content %}
 
     <div class="container">
-        <h1>Login Here</h1>
         <form method="POST">
             {{ login_form.hidden_tag() }}
-            <div class="form-group">
-                <fieldset>
-                    {{ login_form.email.label }}
-                    {{ login_form.email(class="form-control", placeholder = "Email Here")}}
-                </fieldset>
-                <fieldset>
-                    {{ login_form.password.label }}
-                    {{ login_form.password(class = "form-control", placeholder = "Password Here")}}
-                </fieldset>
-                {{ login_form.submit(class="btn btn-primary") }}
+            <div class="col-lg-5 offset-lg-3">
+                <h1>Attorney Login</h1>
+                <div class="form-group">
+                    <fieldset>
+                        {{ login_form.email.label }}
+                        {{ login_form.email(class="form-control", placeholder = "Email Here")}}
+                    </fieldset>
+                    <fieldset>
+                        {{ login_form.password.label }}
+                        {{ login_form.password(class = "form-control", placeholder = "Password Here")}}
+                    </fieldset>
+                    <div class="spacing" style="padding-top: 20px;">
+                        {{ login_form.submit(class = "btn btn-primary")}}
+                        </div>
+                </div>
             </div>
         </form>
     </div>
 
 {% endblock content %}
+
+<div class="col-7">
+    <input type="text" class="form-control" placeholder="City">
+  </div>
